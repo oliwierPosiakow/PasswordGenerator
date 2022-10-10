@@ -1,0 +1,25 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: block;
+    padding: 100px;
+    height: 60vh;
+    width: 40vw;
+    background-color: aquamarine;
+    border-radius: 7px;
+}
+.main h1{
+    font-size: 4em;
+    font-weight: bold;
+    margin: 20px auto;
+}
+.main p{
+    margin: 0px 0px 40px;
+    font-size: 1.3em;
+}
