@@ -4,22 +4,94 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #E1E5F2;
+    background-color: #003549;
+    margin: 0;
 }
 
 .main{
     display: block;
-    padding: 100px;
-    height: 60vh;
+    padding: 50px 100px;
+    padding-bottom: 100px;
     width: 40vw;
-    background-color: aquamarine;
-    border-radius: 7px;
+    background-color: #015776;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #061C24;
 }
 .main h1{
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
-    margin: 20px auto;
+    margin-bottom: 20px;
 }
+.main h1 .h1color{
+    color: #2EAFC9;
+}
+
 .main p{
-    margin: 0px 0px 40px;
+    margin: 0px 0px 5px;
     font-size: 1.3em;
+}
+
+#length-in{
+    margin: 20px 20px 20px 0;
+    width: 40px;
+    height: 20px;
+    background-color: #003549;
+    color:#E1E5F2;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 5px;
+}
+
+#generate-btn{
+    display: block;
+    width: 80%;
+    height: 80px;
+    margin: 50px auto;
+    background-color: #003549;
+    color: #E1E5F2;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 5px 5px 15px #003549;
+    cursor: pointer;
+    transition: transform 5ms ease-in;
+}
+#generate-btn:active{
+    transform: translateY(3px);
+    box-shadow: 4px 4px 12px #003549;
+}
+
+.settings{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px;
+    border: solid 2px #0C3949;
+    border-radius: 5px;
+}
+
+.propositions{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.propositions button{
+    width: 80%;
+    text-align: center;
+    height: 80px;
+    margin: 20px 10px 10px 10px;
+    background-color: #003549;
+    border: none;
+    border-radius: 5px;
+    color: #E1E5F2;
+    font-family: inherit;
+    font-size: 15px;
 }
