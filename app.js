@@ -5,6 +5,7 @@ let generateBtn = document.getElementById("generate-btn");
 let pswd1 = document.getElementById("pass-1");
 let pswd2 = document.getElementById("pass-2");
 
+//main function which creates passwords and displays them in selected areas 
 generateBtn.addEventListener("click",function(){
     let lengthEl = document.getElementById("length-in").value
     let checkboxN = document.getElementById("if-numbers").checked;
@@ -45,9 +46,19 @@ generateBtn.addEventListener("click",function(){
         }
     }
 
-    pswd1.textContent = password1
-    pswd2.textContent = password2
-      
-}
-)
-    
+    pswd1.textContent = password1;
+    pswd2.textContent = password2;
+})
+
+//adding copy to clipboard onclick
+pswd1.addEventListener("click", function(){
+    let x = pswd1.textContent;
+    navigator.clipboard.writeText(x);
+    let y = document.getElementById("cp1")
+    y.classList.toggle("visible")
+})
+
+pswd2.addEventListener("click", function(){
+    let x = pswd2.textContent;
+    navigator.clipboard.writeText(x);
+})

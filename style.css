@@ -78,20 +78,43 @@ body{
 }
 
 .propositions{
+    position: relative;
     display: flex;
     align-items:center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 .propositions button{
     width: 80%;
     text-align: center;
     height: 80px;
-    margin: 20px 10px 10px 10px;
+    margin: 15px 10px 10px 10px;
     background-color: #003549;
     border: none;
     border-radius: 5px;
     color: #E1E5F2;
     font-family: inherit;
     font-size: 15px;
+    box-shadow: 5px 5px 15px #003549;
+}
+.propositions button:active{
+    transform: translateY(3px);
+    box-shadow: 4px 4px 12px #003549;
+}
+.copied-msg{
+    margin: none;
+    padding: none;
+    height: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.copied-msg span{
+    margin: 0px auto;
+    opacity: 1;
+    font-family: inherit;
+    transition: transform 0.5ms ease-in;
+}
+.copied-msg span .visible{
+    opacity: 1;
 }
