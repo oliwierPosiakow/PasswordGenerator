@@ -51,14 +51,14 @@ generateBtn.addEventListener("click",function(){
 })
 
 //adding copy to clipboard onclick
-pswd1.addEventListener("click", function(){
-    let x = pswd1.textContent;
-    navigator.clipboard.writeText(x);
-    let y = document.getElementById("cp1")
-    y.classList.toggle("visible")
-})
-
-pswd2.addEventListener("click", function(){
-    let x = pswd2.textContent;
-    navigator.clipboard.writeText(x);
+pswd1.addEventListener("click", function() {
+    let x = document.getElementById("cp1")
+    let y = pswd1.textContent
+    navigator.clipboard.writeText(y);
+    
+    if(x.style.visibility === "hidden"){
+        x.style.visibility = "visible";
+    } else{
+        x.style.visibility = "hidden";
+    }
 })

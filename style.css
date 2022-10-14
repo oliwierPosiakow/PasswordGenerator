@@ -85,10 +85,11 @@ body{
     margin-top: 0px;
 }
 .propositions button{
-    width: 80%;
+    flex: 50%;
     text-align: center;
     height: 80px;
     margin: 15px 10px 10px 10px;
+    padding: 10px;
     background-color: #003549;
     border: none;
     border-radius: 5px;
@@ -110,11 +111,9 @@ body{
     align-items: center;
 }
 .copied-msg span{
+    visibility: hidden;
     margin: 0px auto;
     opacity: 1;
     font-family: inherit;
     transition: transform 0.5ms ease-in;
-}
-.copied-msg span .visible{
-    opacity: 1;
 }
