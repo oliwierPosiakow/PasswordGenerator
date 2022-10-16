@@ -4,6 +4,11 @@ const char= ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q"
 let generateBtn = document.getElementById("generate-btn");
 let pswd1 = document.getElementById("pass-1");
 let pswd2 = document.getElementById("pass-2");
+let copiedMsg1 = document.getElementById("cp1");
+let copiedMsg2 = document.getElementById("cp2");
+
+copiedMsg1.style.visibility = "hidden";
+copiedMsg2.style.visibility = "hidden";
 
 //main function which creates passwords and displays them in selected areas 
 generateBtn.addEventListener("click",function(){
@@ -51,14 +56,22 @@ generateBtn.addEventListener("click",function(){
 })
 
 //adding copy to clipboard onclick
-pswd1.addEventListener("click", function() {
-    let x = document.getElementById("cp1")
+pswd1.addEventListener("click", function()  {
     let y = pswd1.textContent
-    navigator.clipboard.writeText(y);
+    navigator.clipboard.writeText(y)
     
-    if(x.style.visibility === "hidden"){
-        x.style.visibility = "visible";
-    } else{
-        x.style.visibility = "hidden";
+    if(copiedMsg1.style.visibility === "hidden"){
+        copiedMsg1.style.visibility = "visible";
+        copiedMsg2.style.visibility = "hidden"
+    }
+})
+
+pswd2.addEventListener("click", function() {
+    let y = pswd2.textContent
+    navigator.clipboard.writeText(y)
+
+    if(copiedMsg2.style.visibility === "hidden"){
+        copiedMsg2.style.visibility = "visible"
+        copiedMsg1.style.visibility = "hidden"
     }
 })
