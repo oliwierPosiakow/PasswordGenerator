@@ -18,6 +18,9 @@ generateBtn.addEventListener("click",function(){
     let password1 = ""
     let password2 = ""
 
+    copiedMsg1.style.visibility = "hidden";
+    copiedMsg2.style.visibility = "hidden";
+
     if(checkboxN===true && checkboxS===true){
         for(let i=0; i < lengthEl; i++){
             let x = Math.floor(Math.random()*characters.length)
