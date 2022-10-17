@@ -11,17 +11,17 @@ body{
 
 .main{
     display: block;
-    padding: 50px 100px;
-    padding-bottom: 100px;
+    padding: 50px 80px;
     width: 40vw;
     background-color: #015776;
     border-radius: 10px;
     box-shadow: 3px 3px 10px #061C24;
+    overflow: hidden;
 }
 .main h1{
     font-size: 3em;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 0px 0px 20px 0px;
 }
 .main h1 .h1color{
     color: #2EAFC9;
@@ -47,7 +47,7 @@ body{
 
 #generate-btn{
     display: block;
-    width: 80%;
+    width: 100%;
     height: 80px;
     margin: 50px auto;
     background-color: #003549;
@@ -65,16 +65,22 @@ body{
     box-shadow: 4px 4px 12px #003549;
 }
 
-.settings{
+.settings {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     margin: 30px auto;
     padding: 10px;
     border: solid 2px #0C3949;
     border-radius: 5px;
+    text-align: center;
+}
+.settings p{
+    display: block;
+    font-size: 18px;
 }
 
 .propositions{
@@ -82,13 +88,19 @@ body{
     display: flex;
     align-items:center;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 10px;
 }
-.propositions button{
-    flex: 50%;
+.prop1, .prop2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#pass-1, #pass-2{
+    width: 20vw;
     text-align: center;
     height: 80px;
-    margin: 15px 10px 10px 10px;
+    margin: 5px 10px 10px 10px;
     padding: 10px;
     background-color: #003549;
     border: none;
@@ -98,22 +110,46 @@ body{
     font-size: 15px;
     box-shadow: 5px 5px 15px #003549;
 }
+
 .propositions button:active{
     transform: translateY(3px);
     box-shadow: 4px 4px 12px #003549;
 }
-.copied-msg{
-    margin: none;
-    padding: none;
-    height: 3px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.copied-msg p{
-    margin: 0px auto;
+
+.propositions p{
+    margin: 5px 0px 0px 0px;
     opacity: 1;
     font-family: inherit;
     font-size: 1em;
     transition: transform 0.5ms ease-in;
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        padding: 30px;
+        width: 70vw;
+        height: 90vh;
+    }
+
+    .propositions{
+        flex-direction: column;
+        margin: auto 0px;
+
+    }
+    .propositions button{
+        width: 70vw;
+        height: 100px;
+        
+    }
+    #generate-btn{
+        width: 70vw;
+        margin: 10px 100px 0px 0px;
+    }
+    .settings{
+        flex-wrap: wrap;
+        width: 70vw;
+    }
+
+
+
 }

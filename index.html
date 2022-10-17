@@ -19,20 +19,23 @@
         <p>Generate a fully randomized password in just one click</p>
         
         <div class="settings">
-                Select length <input  id="length-in"type="number" min="1" max="25">
-
-                Numbers <input id="if-numbers" type="checkbox" checked="unchecked">
-
-                Special characters <input id="if-special" type="checkbox" checked="unchecked">
+            <p>Select length <input  id="length-in"type="number" min="1" max="25"></p>
+            <p>Numbers <input id="if-numbers" type="checkbox" checked="unchecked"></p>  
+            <p>Special characters <input id="if-special" type="checkbox" checked="unchecked"></p>  
         </div>
+
         <button id="generate-btn">Generate password</button>
-        <div class="copied-msg">
-            <p id="cp1">Copied!</p>
-            <p id="cp2">Copied!</p>
-        </div>
+
         <div class="propositions">
-            <button id="pass-1"></button>
-            <button id="pass-2"></button>
+            <div class="prop1">
+                <p id="cp1">Copied!</p>
+                <button id="pass-1"></button>
+            </div>
+            <div class="prop2">
+                <p id="cp2">Copied!</p>
+                <button id="pass-2"></button>
+            </div>
+
         </div>
     </div>
     <script src="app.js"></script>
