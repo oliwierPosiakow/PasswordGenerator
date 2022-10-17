@@ -99,6 +99,7 @@ body{
 #pass-1, #pass-2{
     width: 20vw;
     text-align: center;
+    word-wrap: break-word;
     height: 80px;
     margin: 5px 10px 10px 10px;
     padding: 10px;
@@ -129,16 +130,23 @@ body{
         padding: 30px;
         width: 70vw;
         height: 90vh;
+        font-size: 1em;
     }
-
+    .main h1{
+        font-size: 3em;
+    }
+    .main p{
+        font-size: 1em;
+    }
     .propositions{
         flex-direction: column;
-        margin: auto 0px;
+        margin-top: 5px;
 
     }
-    .propositions button{
+    #pass-1, #pass-2{
         width: 70vw;
-        height: 100px;
+        height: 60px;
+        margin-bottom: 10px;
         
     }
     #generate-btn{
@@ -146,9 +154,22 @@ body{
         margin: 10px 100px 0px 0px;
     }
     .settings{
+        flex-direction: column;
         flex-wrap: wrap;
-        width: 70vw;
+        width: 60vw;
+        font-size: 20px;
     }
+    #if-numbers, #if-special{
+        width: 25px;
+        height: 25px;
+    }
+    #length-in{
+        width: 50px;
+    }
+    .settings p{
+        margin: 10px 0px 10px 0px;
+    }
+
 
 
 
