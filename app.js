@@ -6,7 +6,7 @@ let pswd1 = document.getElementById("pass-1");
 let pswd2 = document.getElementById("pass-2");
 let copiedMsg1 = document.getElementById("cp1");
 let copiedMsg2 = document.getElementById("cp2");
-
+let lengthCheck = document.getElementById("length-in").value
 copiedMsg1.style.visibility = "hidden";
 copiedMsg2.style.visibility = "hidden";
 
@@ -20,7 +20,12 @@ generateBtn.addEventListener("click",function(){
 
     copiedMsg1.style.visibility = "hidden";
     copiedMsg2.style.visibility = "hidden";
-
+    if(lengthEl <= 25){
+        
+    }
+    else{
+        lengthEl = 25
+    }
     if(checkboxN===true && checkboxS===true){
         for(let i=0; i < lengthEl; i++){
             let x = Math.floor(Math.random()*characters.length)
